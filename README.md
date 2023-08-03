@@ -24,6 +24,8 @@ Curso de Dev/Talles: React Query <https://cursos.devtalles.com/courses/take/reac
 [<img src="https://raw.githubusercontent.com/github/explore/bbd48b997e8d0bef63f676eca4da5e1f76487b56/topics/visual-studio-code/visual-studio-code.png" width=50 alt="VSCode">][vscode-link]
 [<img src="https://raw.githubusercontent.com/BorjaG90/media/master/img/logos/vite.png"  height=50 alt="vite">][vite-link]
 
+<div align="center">
+
 ## Authors
 
 ### **Borja Gete**
