@@ -16,9 +16,10 @@ export const useLabels = () => {
     getLabels,
     {
       staleTime: 1000 * 60 * 60,
-      // placeholderData: [ // No se considera fresh, despues del staleTime realiza petición
-      // ],
-      initialData: [ // Se considera fresh, no realiza petición hasta staleTime
+      // placeholderData: [], // No se considera fresh, despues del staleTime realiza petición
+      
+      // initialData: [], // Se considera fresh, no realiza petición hasta staleTime
+      initialData: [
         {
           id: 725156255,
           node_id: "MDU6TGFiZWw3MjUxNTYyNTU=",
