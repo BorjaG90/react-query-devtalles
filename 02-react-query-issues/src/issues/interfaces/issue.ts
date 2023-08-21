@@ -24,7 +24,7 @@ export interface Issue {
   closed_at:                null;
   author_association:       AuthorAssociation;
   active_lock_reason:       null;
-  body:                     null | string;
+  body:                     string;
   reactions:                Reactions;
   timeline_url:             string;
   performed_via_github_app: null;
