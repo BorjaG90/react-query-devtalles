@@ -1,4 +1,4 @@
-<h1 align="center">React QUery</h1>
+<h1 align="center">React Query</h1>
 
 <div align="center">
 
