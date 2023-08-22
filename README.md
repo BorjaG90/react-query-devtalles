@@ -18,6 +18,7 @@ Curso de Dev/Talles: React Query <https://cursos.devtalles.com/courses/take/reac
 
 [<img allowed_elements src="https://raw.githubusercontent.com/github/explore/bbd48b997e8d0bef63f676eca4da5e1f76487b56/topics/typescript/typescript.png" width=50 alt="Typescript">][typescript-link]
 [<img src="https://raw.githubusercontent.com/BorjaG90/media/master/img/logos/reactJs.png" width=50 alt="react">][react-link]
+[<img allowed_elements src="https://raw.githubusercontent.com/BorjaG90/media/master/img/logos/tanstack-query.png" width=50 alt="Tanstack-Query">][tanstack-query-link]
 
 ### Platforms
 
@@ -37,12 +38,13 @@ Curso de Dev/Talles: React Query <https://cursos.devtalles.com/courses/take/reac
 
 </div>
 
-[borjag90dev-gmail]: mailto:borjag90dev@gmail.com
 [borjag90dev-github]: https://github.com/BorjaG90
 [borjag90dev-gitlab]: https://gitlab.com/BorjaG90
+[borjag90dev-gmail]: mailto:borjag90dev@gmail.com
 [borjag90dev-linkedin]: https://www.linkedin.com/in/borjag90/
-[repo-link]: https://github.com/bg90dev-sandbox/react-query-devtalles
-[vscode-link]: https://code.visualstudio.com/
-[typescript-link]: https://www.typescriptlang.org/
 [react-link]: https://es.reactjs.org/
+[repo-link]: https://github.com/bg90dev-sandbox/react-query-devtalles
+[tanstack-query-link]: https://tanstack.com/query/v4/docs/react/overview
+[typescript-link]: https://www.typescriptlang.org/
 [vite-link]: https://vitejs.dev/
+[vscode-link]: https://code.visualstudio.com/
