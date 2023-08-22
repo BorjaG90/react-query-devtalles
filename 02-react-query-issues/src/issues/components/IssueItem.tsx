@@ -28,7 +28,10 @@ export const IssueItem: FC<Props> = ({ issue }) => {
   const presetData = () => {
     queryClient.setQueryData(
       ['issue', issue.number],
-      issue
+      issue,
+      {
+        updatedAt: new Date().getTime() + 60000
+      }
     );
   }
 
@@ -36,6 +39,7 @@ export const IssueItem: FC<Props> = ({ issue }) => {
     <div
 			className="card mb-2 issue"
 			onClick={ () => navigate(`/issues/issue/${issue.number}`) }
+      // onMouseEnter={ prefetchData }
       onMouseEnter={ presetData }
 		>
       <div className="card-body d-flex align-items-center">
