@@ -19,7 +19,7 @@ export const useLabels = () => {
       // placeholderData: [], // No se considera fresh, despues del staleTime realiza petición
       
       // initialData: [], // Se considera fresh, no realiza petición hasta staleTime
-      initialData: [
+      placeholderData: [
         {
           id: 725156255,
           node_id: "MDU6TGFiZWw3MjUxNTYyNTU=",
