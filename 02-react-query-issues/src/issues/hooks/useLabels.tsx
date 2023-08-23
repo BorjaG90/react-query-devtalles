@@ -1,12 +1,12 @@
 import { useQuery } from '@tanstack/react-query';
 import { githubApi } from '../../api/githubApi';
 import { Label } from '../interfaces/label';
-import { sleep } from '../../helpers/sleep';
+import { sleep } from '../../helpers';
 
 const getLabels = async():Promise<Label[]> => {
   await sleep(2);
 
-	const { data } = await githubApi.get<Label[]>('/labels');
+	const { data } = await githubApi.get<Label[]>('/labels?per_page=100');
 	return data;
 	};
 
@@ -19,7 +19,7 @@ export const useLabels = () => {
       // placeholderData: [], // No se considera fresh, despues del staleTime realiza petición
       
       // initialData: [], // Se considera fresh, no realiza petición hasta staleTime
-      initialData: [
+      placeholderData: [
         {
           id: 725156255,
           node_id: "MDU6TGFiZWw3MjUxNTYyNTU=",
