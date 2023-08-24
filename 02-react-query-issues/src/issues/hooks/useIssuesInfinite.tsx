@@ -9,7 +9,15 @@ interface Props {
   page?: number;
 }
 
-const getIssues = async({labels, state, page = 1}: Props):Promise<Issue[]> => {
+interface QueryProps {
+  pageParam?: number;
+  queryKey: (string| Props)[]
+}
+
+const getIssues = async({pageParam = 1, queryKey}: QueryProps):Promise<Issue[]> => {
+  const [,, args] = queryKey;
+  const { state, labels } = args as Props;
+  
   await sleep(2);
 
   const params = new URLSearchParams();
@@ -21,7 +29,7 @@ const getIssues = async({labels, state, page = 1}: Props):Promise<Issue[]> => {
     params.append('labels', labelString);
   }
 
-  params.append('page', page.toString());
+  params.append('page', pageParam.toString());
   params.append('per_page', '5');
 
   const { data } = await githubApi.get<Issue[]>('/issues', {params});
