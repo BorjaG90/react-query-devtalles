@@ -8,6 +8,10 @@
 
 Curso de Dev/Talles: React Query <https://cursos.devtalles.com/courses/take/react-query>
 
+[Certificado](https://cursos.devtalles.com/certificates/loio7qwssg)
+
+![Diploma](https://raw.githubusercontent.com/BorjaG90/media/master/certificates/ReactQueryCertificate.png)
+
 </div>
 
 ---
