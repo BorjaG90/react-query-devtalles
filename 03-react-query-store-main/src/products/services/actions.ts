@@ -12,9 +12,18 @@ const sleep = (seconds:number = 0):Promise<boolean> => {
   })
 };
 
-export const getProducts = async({filterKey}: GetProductsOptions) => {
+export const getProducts = async({filterKey}:GetProductsOptions):Promise<Product[]> => {
   await sleep(2);
+
   const filterURL = ( filterKey ) ? `category=${filterKey}`:'';
   const { data } = await productsAPI.get<Product[]>(`/products?${filterURL}`);
+
+  return data;
+};
+
+export const getProductByID = async(id: number):Promise<Product> => {
+  // await sleep(2);
+  const { data } = await productsAPI.get<Product>(`/products/${id}`);
+
   return data;
 };
