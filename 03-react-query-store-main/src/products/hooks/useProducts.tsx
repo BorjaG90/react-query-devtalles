@@ -10,7 +10,7 @@ export const useProducts = ({filterKey}: Options) => {
     ['products', { filterKey }],
     () => productActions.getProducts({filterKey}),
     {
-      staleTime: 1000,
+      staleTime: 10,
     }
   );
 
