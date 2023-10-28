@@ -31,7 +31,6 @@ export const useProductMutation = () => {
     },
 
     onSuccess: (product, variables, context) => {
-      console.log({product, variables, context});
       
       /** Invalidate query */
       // queryClient.invalidateQueries(
@@ -55,7 +54,25 @@ export const useProductMutation = () => {
           ));
         }
       );
+    },
 
+    onError: (error, variables, context) => {
+      console.log({error, variables, context});
+
+      queryClient.removeQueries(
+        ["product", context?.optimisticProduct.id]
+      );
+
+      queryClient.setQueryData<Product[]>(
+        ['products', { filterKey: variables.category }],
+        (old) => {
+          if ( !old ) return [];
+
+          return old.filter(cachedProduct => (
+            cachedProduct.id !== context?.optimisticProduct.id
+          ));
+        }
+      );
     },
   });
 
